@@ -1,20 +1,40 @@
-# macOS
-.DS_Store
-
-# Python bytecode
+# --- Python ---
 __pycache__/
 *.py[cod]
 
-# Virtual environments
-.venv/
+# --- Virtual environments ---
 venv/
+.env/
+.venv/
+env/
 
-# Environment variables / secrets
-.env
-.env.*
+# --- OS files ---
+.DS_Store
+Thumbs.db
 
-# Logs
-*.log
+# --- Data ---
+data/raw/
+data/clean/
+data/labels/
+data/splits/
 
-# VS Code
-.vscode/
+# --- Models ---
+models/
+*.pt
+*.joblib
+*.bin
+*.ckpt
+
+# --- Logs & outputs ---
+logs/
+outputs/
+wandb/
+runs/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Secrets ---
+*.env
+secrets.json
+config_local.py
